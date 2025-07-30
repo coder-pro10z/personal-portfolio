@@ -6,21 +6,26 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy":"npm run build",
+    "deploy":"gh page -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/coder-pro10z/personal-portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Praveen Kashyap",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/coder-pro10z/personal-portfolio"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  
+  "homepage": "https://coder-pro10z.github.io/personal-portfolio",
+
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4",
     "prettier": "^2.8.1"
   },
